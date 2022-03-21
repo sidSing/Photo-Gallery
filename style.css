@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 0rem;
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.photo {
+  display: inline-block;
+  font-size: inherit;
+  overflow: hidden;
+  position: relative;
+}
+
+.photo p {
+  font-size: 1.17rem;
+  font-weight: 300;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  letter-spacing: 0.15rem;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  transition: all 0.25s ease-in-out;
+  transform: scale(1);
+}
+
+.photo:hover img {
+  transform: scale(1.2);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  font-size: 1.17rem;
+  grid-column: 1/-1;
+  padding: 1.2rem;
+  background: #242629;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  font-size: 1.17rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.47rem;
+  color: #fff;
+}
+
+span,
+ion-icon {
+  color: #a0a0a1;
+  font-weight: 400;
+}
+
+ion-icon {
+  font-size: 1.47rem;
+  font-weight: 400;
+}
+
+a:link,
+a:visited {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+}
